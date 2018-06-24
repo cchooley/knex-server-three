@@ -1,4 +1,3 @@
-// Update with your config settings.
 
 module.exports = {
 
@@ -9,7 +8,7 @@ module.exports = {
 
   production: {
     client: 'pg',
-    connection: 'postgres://localhost/games'
+    connection: process.env.DATABASE_URL
   }
 
 };
